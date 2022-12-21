@@ -9,6 +9,10 @@
     <string name="favourite">Yêu thích</string>
     <string name="voucher">Khuyến mãi</string>
     <string name="history">Lịch sử mua</string>
+
+    <string name="Account">Tài khoản</string>
+    <string name="Profile">My profile</string>
+    <string name="log_out">Đăng xuất</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

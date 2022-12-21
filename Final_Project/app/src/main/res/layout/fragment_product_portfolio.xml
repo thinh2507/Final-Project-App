@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/teal_200"
+android:gravity="center"
+tools:context=".fragment.ProductFragment">
+
+<TextView android:id="@+id/tv_food"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Đồ ăn"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="@drawable/bg_email_edittext"
+    android:drawablePadding="15dp"
+    android:layout_margin="15dp"
+    android:padding="10dp"
+    android:textColor="@color/black"
+    android:textSize="40dp"/>
+
+<TextView android:id="@+id/tv_drink"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Thức uống"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="@drawable/bg_email_edittext"
+    android:drawablePadding="15dp"
+    android:layout_margin="15dp"
+    android:padding="10dp"
+    android:textColor="@color/black"
+    android:textSize="40dp"/>
+
+<TextView android:id="@+id/tv_cosmetic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Mỹ phẩm"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="@drawable/bg_email_edittext"
+    android:drawablePadding="15dp"
+    android:layout_margin="15dp"
+    android:padding="10dp"
+    android:textColor="@color/black"
+    android:textSize="40dp"/>
+
+<TextView android:id="@+id/tv_personal_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Đồ dùng cá nhân"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="@drawable/bg_email_edittext"
+    android:drawablePadding="15dp"
+    android:layout_margin="15dp"
+    android:padding="10dp"
+    android:textColor="@color/black"
+    android:textSize="40dp"/>
+</LinearLayout>

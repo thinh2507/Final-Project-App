@@ -5,14 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/darkturquoise"
     android:gravity="center"
     tools:context=".activity.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trang chủ"
-        android:textColor="@color/white"
+        android:text="hello"
         android:textSize="50dp"/>
 </LinearLayout>
