@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Final_Project</string>
+
+    <string name="forgetPassword"><u>Quên mật khẩu</u></string>
+    <string name="signup"><u>Đăng kí tại đây</u></string>
+
+    <string name="home">Trang chủ</string>
+    <string name="product_category">Loại sản phẩm</string>
+    <string name="favourite">Yêu thích</string>
+    <string name="voucher">Khuyến mãi</string>
+    <string name="history">Lịch sử mua</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
