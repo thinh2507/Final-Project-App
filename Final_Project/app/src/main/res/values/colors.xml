@@ -11,4 +11,9 @@
     <color name="cyan">#00FFFF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <color name="dark_blue">#11296b</color>
+    <color name="blue">#1e96fc</color>
+    <color name="yellow">#ffdb57</color>
+    <color name="dark_yellow">#ffcb05</color>
 </resources>

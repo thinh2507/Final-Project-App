@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="blue">#1e96fc</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="dark_blue">#11296b</color>
+    <color name="dark_yellow">#ffcb05</color>
+    <color name="darkturquoise">#2ABADA</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="royal_blue">#006FBA</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#ffdb57</color>
+    <string name="Account">Tài khoản</string>
+    <string name="Profile">My profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Final_Project</string>
+    <string name="drawablePadding">10dp</string>
+    <string name="favourite">Yêu thích</string>
+    <string name="forgetPassword"><u>Quên mật khẩu</u></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history">Lịch sử mua</string>
+    <string name="home">Trang chủ</string>
+    <string name="log_out">Đăng xuất</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="product_category">Loại sản phẩm</string>
+    <string name="signup"><u>Đăng kí tại đây</u></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="voucher">Khuyến mãi</string>
+    <style name="Theme.Final_Project" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="Theme.Final_Project.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.Final_Project.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Final_Project.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>
