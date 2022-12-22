@@ -2,13 +2,22 @@ package com.example.final_project.fragment;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.final_project.R;
+import com.example.final_project.adapter.NewsAdapter;
+import com.example.final_project.model.News;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +25,8 @@ import com.example.final_project.R;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,6 +36,8 @@ public class HomeFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private RecyclerView newsRV;
+    private NewsAdapter newsAdapter;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -60,6 +73,28 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        newsRV = view.findViewById(R.id.newsRV);
+        newsAdapter = new NewsAdapter(getActivity());
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false);
+        newsRV.setLayoutManager(linearLayoutManager);
+
+        newsAdapter.setData(getNewsList());
+        newsRV.setAdapter(newsAdapter);
+    }
+
+    private List<News> getNewsList(){
+        List<News> list = new ArrayList<>();
+        list.add(new News("GS25 ĐEM BÁNH BAO HOPANG- SỐ 1 HÀN QUỐC VỀ VIỆT NAM", R.drawable.news_01));
+        list.add(new News("GS25 - KHỞI ĐẦU THÁNG 6 KHAI TRƯƠNG BÙNG NỔ 5 CỬA HÀNG", R.drawable.news_01));
+        list.add(new News("KHAI TRƯƠNG MỘT LOẠT 3 CỬA HÀNG TẠI VŨNG TÀU", R.drawable.news_01));
+        return list;
     }
 }

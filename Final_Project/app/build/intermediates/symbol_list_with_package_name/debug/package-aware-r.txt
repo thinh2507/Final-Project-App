@@ -2608,8 +2608,11 @@ drawable abc_vector_test
 drawable app_logo
 drawable avd_hide_password
 drawable avd_show_password
+drawable bakery_01
+drawable banner
 drawable bg_email_edittext
 drawable bg_login_button
+drawable bread_01
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2645,6 +2648,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_phone
 drawable ic_product
 drawable ic_profile
+drawable ic_search
 drawable ic_shopping_cart
 drawable ic_voucher
 drawable m3_appbar_background
@@ -2703,6 +2707,11 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable news_01
+drawable news_02
+drawable news_03
+drawable news_04
+drawable noodle_01
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -2715,6 +2724,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable steamed_01
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -2952,6 +2962,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgNews
 id img_back
 id img_logo
 id immediateStop
@@ -3045,6 +3056,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id newsRV
 id noScroll
 id noState
 id none
@@ -3070,6 +3082,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id picItem
 id pin
 id position
 id postLayout
@@ -3196,6 +3209,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvName
+id tvNews
+id tvPrice
 id tv_forgetPassword
 id tv_login
 id tv_signup
@@ -3367,10 +3383,13 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_cart
+layout fragment_edit_profile
 layout fragment_home
 layout fragment_product
 layout fragment_profile
 layout fragment_voucher
+layout item_news
+layout item_product
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
