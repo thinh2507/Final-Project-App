@@ -1,23 +1,35 @@
 [
     {
-        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\activity_login.xml"
+        "merged": "com.example.final_project.app-mergeDebugResources-43:/layout/fragment_product.xml",
+        "source": "com.example.final_project.app-main-46:/layout/fragment_product.xml"
     },
     {
-        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\fragment_voucher.xml",
-        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\fragment_voucher.xml"
+        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\activity_main.xml",
         "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\fragment_voucher.xml",
+        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\fragment_voucher.xml"
+    },
+    {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\activity_signup.xml",
         "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\activity_signup.xml"
     },
     {
+        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\fragment_product_list.xml",
+        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\fragment_product_list.xml"
+    },
+    {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\item_news.xml",
         "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\item_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\item_category.xml",
+        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\item_category.xml"
     },
     {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\fragment_edit_profile.xml",
@@ -32,16 +44,16 @@
         "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\item_product.xml"
     },
     {
-        "merged": "com.example.final_project.app-mergeDebugResources-43:/layout/item_news.xml",
-        "source": "com.example.final_project.app-main-46:/layout/item_news.xml"
+        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\fragment_product.xml",
+        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\fragment_product.xml"
     },
     {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\fragment_profile.xml",
         "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\fragment_product.xml",
-        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\fragment_product.xml"
+        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\fragment_product_detail.xml",
+        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\fragment_product_detail.xml"
     },
     {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-mergeDebugResources-43:\\layout\\fragment_cart.xml",

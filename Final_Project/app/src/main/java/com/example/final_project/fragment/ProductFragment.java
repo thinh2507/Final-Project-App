@@ -2,13 +2,23 @@ package com.example.final_project.fragment;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.final_project.R;
+import com.example.final_project.adapter.ProductAdapter;
+import com.example.final_project.model.Product;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +35,8 @@ public class ProductFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private RecyclerView productRV;
+    private ProductAdapter productAdapter;
 
     public ProductFragment() {
         // Required empty public constructor
@@ -62,5 +74,30 @@ public class ProductFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_product, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        productRV = view.findViewById(R.id.productRV);
+        productAdapter = new ProductAdapter(getActivity());
+
+//        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 2);
+//        productRV.setLayoutManager(gridLayoutManager);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false);
+        productRV.setLayoutManager(linearLayoutManager);
+
+        productAdapter.setData(getProdList());
+        productRV.setAdapter(productAdapter);
+    }
+
+    private List<Product> getProdList(){
+        List<Product> list = new ArrayList<>();
+        list.add(new Product("Banh mi", 22000, R.drawable.bakery_01));
+        list.add(new Product("Banh mi", 22000, R.drawable.bakery_01));
+        list.add(new Product("Banh mi", 22000, R.drawable.bakery_01));
+        list.add(new Product("Banh mi", 22000, R.drawable.bakery_01));
+        list.add(new Product("Banh mi", 22000, R.drawable.bakery_01));
+        return list;
     }
 }

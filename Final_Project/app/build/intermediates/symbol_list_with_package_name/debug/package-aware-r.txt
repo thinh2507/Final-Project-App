@@ -2962,7 +2962,9 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgCate
 id imgNews
+id imgProd
 id img_back
 id img_logo
 id immediateStop
@@ -2987,6 +2989,7 @@ id listMode
 id list_item
 id locale
 id ltr
+id mainLayout
 id marquee
 id masked
 id match_constraint
@@ -3082,11 +3085,11 @@ id path
 id pathRelative
 id peekHeight
 id percent
-id picItem
 id pin
 id position
 id postLayout
 id pressed
+id productRV
 id progress_circular
 id progress_horizontal
 id radio
@@ -3209,6 +3212,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvCate
 id tvName
 id tvNews
 id tvPrice
@@ -3386,8 +3390,10 @@ layout fragment_cart
 layout fragment_edit_profile
 layout fragment_home
 layout fragment_product
+layout fragment_product_detail
 layout fragment_profile
 layout fragment_voucher
+layout item_category
 layout item_news
 layout item_product
 layout m3_alert_dialog

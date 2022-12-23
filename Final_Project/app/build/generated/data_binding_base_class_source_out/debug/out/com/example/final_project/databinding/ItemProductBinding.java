@@ -21,7 +21,7 @@ public final class ItemProductBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final ImageView picItem;
+  public final ImageView imgProd;
 
   @NonNull
   public final TextView tvName;
@@ -29,10 +29,10 @@ public final class ItemProductBinding implements ViewBinding {
   @NonNull
   public final TextView tvPrice;
 
-  private ItemProductBinding(@NonNull CardView rootView, @NonNull ImageView picItem,
+  private ItemProductBinding(@NonNull CardView rootView, @NonNull ImageView imgProd,
       @NonNull TextView tvName, @NonNull TextView tvPrice) {
     this.rootView = rootView;
-    this.picItem = picItem;
+    this.imgProd = imgProd;
     this.tvName = tvName;
     this.tvPrice = tvPrice;
   }
@@ -64,9 +64,9 @@ public final class ItemProductBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.picItem;
-      ImageView picItem = ViewBindings.findChildViewById(rootView, id);
-      if (picItem == null) {
+      id = R.id.imgProd;
+      ImageView imgProd = ViewBindings.findChildViewById(rootView, id);
+      if (imgProd == null) {
         break missingId;
       }
 
@@ -82,7 +82,7 @@ public final class ItemProductBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemProductBinding((CardView) rootView, picItem, tvName, tvPrice);
+      return new ItemProductBinding((CardView) rootView, imgProd, tvName, tvPrice);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

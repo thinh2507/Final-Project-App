@@ -55,11 +55,15 @@ id edt_email
 id edt_name
 id edt_password
 id edt_phone
+id imgCate
 id imgNews
+id imgProd
 id img_back
 id img_logo
+id mainLayout
 id newsRV
-id picItem
+id productRV
+id tvCate
 id tvName
 id tvNews
 id tvPrice
@@ -74,8 +78,10 @@ layout fragment_cart
 layout fragment_edit_profile
 layout fragment_home
 layout fragment_product
+layout fragment_product_detail
 layout fragment_profile
 layout fragment_voucher
+layout item_category
 layout item_news
 layout item_product
 menu menu_bottom_nav

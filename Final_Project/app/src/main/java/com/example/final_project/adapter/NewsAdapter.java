@@ -16,6 +16,7 @@ import com.example.final_project.model.News;
 import java.util.List;
 
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder> {
+
     private Context context;
     private List<News> newsList;
 
