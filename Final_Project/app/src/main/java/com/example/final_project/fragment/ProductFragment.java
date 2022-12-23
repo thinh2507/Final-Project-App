@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.final_project.R;
 import com.example.final_project.adapter.ProductAdapter;
@@ -81,14 +82,14 @@ public class ProductFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         productRV = view.findViewById(R.id.productRV);
         productAdapter = new ProductAdapter(getActivity());
-
-//        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 2);
-//        productRV.setLayoutManager(gridLayoutManager);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false);
-        productRV.setLayoutManager(linearLayoutManager);
-
+//
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 2);
+        productRV.setLayoutManager(gridLayoutManager);
+//
         productAdapter.setData(getProdList());
-        productRV.setAdapter(productAdapter);
+        TextView demo = view.findViewById(R.id.tvTest);
+        demo.setText(getProdList().get(1).getProdName());
+        //productRV.setAdapter(productAdapter);
     }
 
     private List<Product> getProdList(){

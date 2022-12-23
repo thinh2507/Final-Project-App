@@ -23,25 +23,25 @@ public final class ActivitySignupBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button btnSignup;
+  public final ImageView btnBack;
 
   @NonNull
-  public final EditText edtConfirmPassword;
+  public final Button btnSignUp;
 
   @NonNull
-  public final EditText edtEmail;
+  public final EditText etConfPass;
 
   @NonNull
-  public final EditText edtName;
+  public final EditText etSignMail;
 
   @NonNull
-  public final EditText edtPassword;
+  public final EditText etSignName;
 
   @NonNull
-  public final EditText edtPhone;
+  public final EditText etSignPass;
 
   @NonNull
-  public final ImageView imgBack;
+  public final EditText etSignPhone;
 
   @NonNull
   public final ImageView imgLogo;
@@ -49,18 +49,18 @@ public final class ActivitySignupBinding implements ViewBinding {
   @NonNull
   public final TextView tvLogin;
 
-  private ActivitySignupBinding(@NonNull LinearLayout rootView, @NonNull Button btnSignup,
-      @NonNull EditText edtConfirmPassword, @NonNull EditText edtEmail, @NonNull EditText edtName,
-      @NonNull EditText edtPassword, @NonNull EditText edtPhone, @NonNull ImageView imgBack,
+  private ActivitySignupBinding(@NonNull LinearLayout rootView, @NonNull ImageView btnBack,
+      @NonNull Button btnSignUp, @NonNull EditText etConfPass, @NonNull EditText etSignMail,
+      @NonNull EditText etSignName, @NonNull EditText etSignPass, @NonNull EditText etSignPhone,
       @NonNull ImageView imgLogo, @NonNull TextView tvLogin) {
     this.rootView = rootView;
-    this.btnSignup = btnSignup;
-    this.edtConfirmPassword = edtConfirmPassword;
-    this.edtEmail = edtEmail;
-    this.edtName = edtName;
-    this.edtPassword = edtPassword;
-    this.edtPhone = edtPhone;
-    this.imgBack = imgBack;
+    this.btnBack = btnBack;
+    this.btnSignUp = btnSignUp;
+    this.etConfPass = etConfPass;
+    this.etSignMail = etSignMail;
+    this.etSignName = etSignName;
+    this.etSignPass = etSignPass;
+    this.etSignPhone = etSignPhone;
     this.imgLogo = imgLogo;
     this.tvLogin = tvLogin;
   }
@@ -92,45 +92,45 @@ public final class ActivitySignupBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_signup;
-      Button btnSignup = ViewBindings.findChildViewById(rootView, id);
-      if (btnSignup == null) {
+      id = R.id.btnBack;
+      ImageView btnBack = ViewBindings.findChildViewById(rootView, id);
+      if (btnBack == null) {
         break missingId;
       }
 
-      id = R.id.edt_confirmPassword;
-      EditText edtConfirmPassword = ViewBindings.findChildViewById(rootView, id);
-      if (edtConfirmPassword == null) {
+      id = R.id.btnSignUp;
+      Button btnSignUp = ViewBindings.findChildViewById(rootView, id);
+      if (btnSignUp == null) {
         break missingId;
       }
 
-      id = R.id.edt_email;
-      EditText edtEmail = ViewBindings.findChildViewById(rootView, id);
-      if (edtEmail == null) {
+      id = R.id.etConfPass;
+      EditText etConfPass = ViewBindings.findChildViewById(rootView, id);
+      if (etConfPass == null) {
         break missingId;
       }
 
-      id = R.id.edt_name;
-      EditText edtName = ViewBindings.findChildViewById(rootView, id);
-      if (edtName == null) {
+      id = R.id.etSignMail;
+      EditText etSignMail = ViewBindings.findChildViewById(rootView, id);
+      if (etSignMail == null) {
         break missingId;
       }
 
-      id = R.id.edt_password;
-      EditText edtPassword = ViewBindings.findChildViewById(rootView, id);
-      if (edtPassword == null) {
+      id = R.id.etSignName;
+      EditText etSignName = ViewBindings.findChildViewById(rootView, id);
+      if (etSignName == null) {
         break missingId;
       }
 
-      id = R.id.edt_phone;
-      EditText edtPhone = ViewBindings.findChildViewById(rootView, id);
-      if (edtPhone == null) {
+      id = R.id.etSignPass;
+      EditText etSignPass = ViewBindings.findChildViewById(rootView, id);
+      if (etSignPass == null) {
         break missingId;
       }
 
-      id = R.id.img_back;
-      ImageView imgBack = ViewBindings.findChildViewById(rootView, id);
-      if (imgBack == null) {
+      id = R.id.etSignPhone;
+      EditText etSignPhone = ViewBindings.findChildViewById(rootView, id);
+      if (etSignPhone == null) {
         break missingId;
       }
 
@@ -146,8 +146,8 @@ public final class ActivitySignupBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignupBinding((LinearLayout) rootView, btnSignup, edtConfirmPassword,
-          edtEmail, edtName, edtPassword, edtPhone, imgBack, imgLogo, tvLogin);
+      return new ActivitySignupBinding((LinearLayout) rootView, btnBack, btnSignUp, etConfPass,
+          etSignMail, etSignName, etSignPass, etSignPhone, imgLogo, tvLogin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

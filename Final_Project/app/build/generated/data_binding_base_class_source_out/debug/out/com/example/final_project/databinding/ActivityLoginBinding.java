@@ -26,34 +26,34 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final Button btnLogin;
 
   @NonNull
-  public final EditText edtEmail;
+  public final EditText etMail;
 
   @NonNull
-  public final EditText edtPassword;
+  public final EditText etPass;
 
   @NonNull
   public final ImageView imgLogo;
 
   @NonNull
-  public final TextView tvForgetPassword;
+  public final TextView tvForgot;
 
   @NonNull
-  public final TextView tvLogin;
+  public final TextView tvSignUp;
 
   @NonNull
-  public final TextView tvSignup;
+  public final TextView tvTitle;
 
   private ActivityLoginBinding(@NonNull LinearLayout rootView, @NonNull Button btnLogin,
-      @NonNull EditText edtEmail, @NonNull EditText edtPassword, @NonNull ImageView imgLogo,
-      @NonNull TextView tvForgetPassword, @NonNull TextView tvLogin, @NonNull TextView tvSignup) {
+      @NonNull EditText etMail, @NonNull EditText etPass, @NonNull ImageView imgLogo,
+      @NonNull TextView tvForgot, @NonNull TextView tvSignUp, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnLogin = btnLogin;
-    this.edtEmail = edtEmail;
-    this.edtPassword = edtPassword;
+    this.etMail = etMail;
+    this.etPass = etPass;
     this.imgLogo = imgLogo;
-    this.tvForgetPassword = tvForgetPassword;
-    this.tvLogin = tvLogin;
-    this.tvSignup = tvSignup;
+    this.tvForgot = tvForgot;
+    this.tvSignUp = tvSignUp;
+    this.tvTitle = tvTitle;
   }
 
   @Override
@@ -83,21 +83,21 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_login;
+      id = R.id.btnLogin;
       Button btnLogin = ViewBindings.findChildViewById(rootView, id);
       if (btnLogin == null) {
         break missingId;
       }
 
-      id = R.id.edt_email;
-      EditText edtEmail = ViewBindings.findChildViewById(rootView, id);
-      if (edtEmail == null) {
+      id = R.id.etMail;
+      EditText etMail = ViewBindings.findChildViewById(rootView, id);
+      if (etMail == null) {
         break missingId;
       }
 
-      id = R.id.edt_password;
-      EditText edtPassword = ViewBindings.findChildViewById(rootView, id);
-      if (edtPassword == null) {
+      id = R.id.etPass;
+      EditText etPass = ViewBindings.findChildViewById(rootView, id);
+      if (etPass == null) {
         break missingId;
       }
 
@@ -107,26 +107,26 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_forgetPassword;
-      TextView tvForgetPassword = ViewBindings.findChildViewById(rootView, id);
-      if (tvForgetPassword == null) {
+      id = R.id.tvForgot;
+      TextView tvForgot = ViewBindings.findChildViewById(rootView, id);
+      if (tvForgot == null) {
         break missingId;
       }
 
-      id = R.id.tv_login;
-      TextView tvLogin = ViewBindings.findChildViewById(rootView, id);
-      if (tvLogin == null) {
+      id = R.id.tvSignUp;
+      TextView tvSignUp = ViewBindings.findChildViewById(rootView, id);
+      if (tvSignUp == null) {
         break missingId;
       }
 
-      id = R.id.tv_signup;
-      TextView tvSignup = ViewBindings.findChildViewById(rootView, id);
-      if (tvSignup == null) {
+      id = R.id.tvTitle;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
         break missingId;
       }
 
-      return new ActivityLoginBinding((LinearLayout) rootView, btnLogin, edtEmail, edtPassword,
-          imgLogo, tvForgetPassword, tvLogin, tvSignup);
+      return new ActivityLoginBinding((LinearLayout) rootView, btnLogin, etMail, etPass, imgLogo,
+          tvForgot, tvSignUp, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

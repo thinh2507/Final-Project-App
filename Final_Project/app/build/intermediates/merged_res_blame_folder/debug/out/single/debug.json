@@ -12,12 +12,12 @@
         "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\drawable\\ic_email.xml"
     },
     {
-        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-merged_res-44:\\drawable-v24_bread_01.png.flat",
-        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\drawable-v24\\bread_01.png"
-    },
-    {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-merged_res-44:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-merged_res-44:\\drawable-v24_bread_01.png.flat",
+        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\drawable-v24\\bread_01.png"
     },
     {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-merged_res-44:\\layout_item_news.xml.flat",
@@ -144,12 +144,12 @@
         "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\drawable\\ic_product.xml"
     },
     {
-        "merged": "com.example.final_project.app-merged_res-44:/layout_fragment_product.xml.flat",
-        "source": "com.example.final_project.app-main-46:/layout/fragment_product.xml"
-    },
-    {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-merged_res-44:\\menu_menu_bottom_nav.xml.flat",
         "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\menu\\menu_bottom_nav.xml"
+    },
+    {
+        "merged": "com.example.final_project.app-merged_res-44:/layout_activity_login.xml.flat",
+        "source": "com.example.final_project.app-main-46:/layout/activity_login.xml"
     },
     {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-merged_res-44:\\drawable_ic_voucher.xml.flat",
@@ -158,6 +158,10 @@
     {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-merged_res-44:\\drawable_ic_detail.xml.flat",
         "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\drawable\\ic_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-merged_res-44:\\layout_product_item.xml.flat",
+        "source": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-main-46:\\layout\\product_item.xml"
     },
     {
         "merged": "C:\\Users\\1052 DMX\\.gradle\\daemon\\7.3.3\\com.example.final_project.app-merged_res-44:\\mipmap-mdpi_ic_launcher_round.webp.flat",

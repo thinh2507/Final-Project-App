@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,9 +23,14 @@ public final class FragmentProductBinding implements ViewBinding {
   @NonNull
   public final RecyclerView productRV;
 
-  private FragmentProductBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView productRV) {
+  @NonNull
+  public final TextView tvTest;
+
+  private FragmentProductBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView productRV,
+      @NonNull TextView tvTest) {
     this.rootView = rootView;
     this.productRV = productRV;
+    this.tvTest = tvTest;
   }
 
   @Override
@@ -60,7 +66,13 @@ public final class FragmentProductBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProductBinding((LinearLayout) rootView, productRV);
+      id = R.id.tvTest;
+      TextView tvTest = ViewBindings.findChildViewById(rootView, id);
+      if (tvTest == null) {
+        break missingId;
+      }
+
+      return new FragmentProductBinding((LinearLayout) rootView, productRV, tvTest);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

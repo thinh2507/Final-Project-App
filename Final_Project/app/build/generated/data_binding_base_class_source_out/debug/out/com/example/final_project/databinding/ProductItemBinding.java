@@ -16,21 +16,25 @@ import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
-public final class ItemCategoryBinding implements ViewBinding {
+public final class ProductItemBinding implements ViewBinding {
   @NonNull
   private final CardView rootView;
 
   @NonNull
-  public final ImageView imgCate;
+  public final ImageView imgProd;
 
   @NonNull
-  public final TextView tvCate;
+  public final TextView tvName;
 
-  private ItemCategoryBinding(@NonNull CardView rootView, @NonNull ImageView imgCate,
-      @NonNull TextView tvCate) {
+  @NonNull
+  public final TextView tvPrice;
+
+  private ProductItemBinding(@NonNull CardView rootView, @NonNull ImageView imgProd,
+      @NonNull TextView tvName, @NonNull TextView tvPrice) {
     this.rootView = rootView;
-    this.imgCate = imgCate;
-    this.tvCate = tvCate;
+    this.imgProd = imgProd;
+    this.tvName = tvName;
+    this.tvPrice = tvPrice;
   }
 
   @Override
@@ -40,14 +44,14 @@ public final class ItemCategoryBinding implements ViewBinding {
   }
 
   @NonNull
-  public static ItemCategoryBinding inflate(@NonNull LayoutInflater inflater) {
+  public static ProductItemBinding inflate(@NonNull LayoutInflater inflater) {
     return inflate(inflater, null, false);
   }
 
   @NonNull
-  public static ItemCategoryBinding inflate(@NonNull LayoutInflater inflater,
+  public static ProductItemBinding inflate(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup parent, boolean attachToParent) {
-    View root = inflater.inflate(R.layout.item_category, parent, false);
+    View root = inflater.inflate(R.layout.product_item, parent, false);
     if (attachToParent) {
       parent.addView(root);
     }
@@ -55,24 +59,30 @@ public final class ItemCategoryBinding implements ViewBinding {
   }
 
   @NonNull
-  public static ItemCategoryBinding bind(@NonNull View rootView) {
+  public static ProductItemBinding bind(@NonNull View rootView) {
     // The body of this method is generated in a way you would not otherwise write.
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.imgCate;
-      ImageView imgCate = ViewBindings.findChildViewById(rootView, id);
-      if (imgCate == null) {
+      id = R.id.imgProd;
+      ImageView imgProd = ViewBindings.findChildViewById(rootView, id);
+      if (imgProd == null) {
         break missingId;
       }
 
-      id = R.id.tvCate;
-      TextView tvCate = ViewBindings.findChildViewById(rootView, id);
-      if (tvCate == null) {
+      id = R.id.tvName;
+      TextView tvName = ViewBindings.findChildViewById(rootView, id);
+      if (tvName == null) {
         break missingId;
       }
 
-      return new ItemCategoryBinding((CardView) rootView, imgCate, tvCate);
+      id = R.id.tvPrice;
+      TextView tvPrice = ViewBindings.findChildViewById(rootView, id);
+      if (tvPrice == null) {
+        break missingId;
+      }
+
+      return new ProductItemBinding((CardView) rootView, imgProd, tvName, tvPrice);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -18,7 +18,8 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
-        <TextView android:id="@+id/tv_login"
+        <TextView
+            android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Log In"
@@ -27,7 +28,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="32sp" />
 
-        <EditText android:id="@+id/edt_email"
+        <EditText android:id="@+id/etMail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -42,7 +43,7 @@
             android:textSize="16sp"
             android:hint="Email"/>
 
-        <EditText android:id="@+id/edt_password"
+        <EditText android:id="@+id/etPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -57,7 +58,7 @@
             android:drawableTint="@color/blue"
             android:hint="Mật khẩu"/>
 
-        <TextView android:id="@+id/tv_forgetPassword"
+        <TextView android:id="@+id/tvForgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/forgetPassword"
@@ -68,7 +69,7 @@
             android:layout_marginRight="20dp"
             android:layout_gravity="right"/>
 
-        <Button android:id="@+id/btn_login"
+        <Button android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Đăng nhập"
@@ -91,7 +92,8 @@
             android:textSize="16sp"
             android:textColor="@color/blue"/>
 
-        <TextView android:id="@+id/tv_signup"
+        <TextView android:id="@+id/tvSignUp"
+            android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Đăng kí"

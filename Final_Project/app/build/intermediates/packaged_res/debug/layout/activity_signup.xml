@@ -8,7 +8,8 @@
     android:padding="20dp"
     android:gravity="center_horizontal">
 
-    <ImageView android:id="@+id/img_back"
+    <ImageView android:id="@+id/btnBack"
+        android:clickable="true"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_gravity="start"
@@ -36,7 +37,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="32sp"/>
 
-        <EditText android:id="@+id/edt_name"
+        <EditText android:id="@+id/etSignName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -51,7 +52,7 @@
             android:textSize="16dp"
             android:hint="Họ và tên"/>
 
-        <EditText android:id="@+id/edt_phone"
+        <EditText android:id="@+id/etSignPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
@@ -66,7 +67,7 @@
             android:textSize="16dp"
             android:hint="Số điện thoại"/>
 
-        <EditText android:id="@+id/edt_email"
+        <EditText android:id="@+id/etSignMail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -81,7 +82,7 @@
             android:textSize="16dp"
             android:hint="Email"/>
 
-        <EditText android:id="@+id/edt_password"
+        <EditText android:id="@+id/etSignPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -96,7 +97,7 @@
             android:drawableTint="@color/blue"
             android:hint="Mật khẩu"/>
 
-        <EditText android:id="@+id/edt_confirmPassword"
+        <EditText android:id="@+id/etConfPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -111,7 +112,7 @@
             android:drawableTint="@color/blue"
             android:hint="Nhập lại mật khẩu"/>
 
-        <Button android:id="@+id/btn_signup"
+        <Button android:id="@+id/btnSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Đăng kí"
